@@ -1,0 +1,119 @@
+body {
+  background-color: black;
+}
+.triangleDown {
+  position: absolute;
+  top: 0;
+  left: 400px;
+  width: 0;
+  height: 0;
+  border-left: 450px solid transparent;
+  border-right: 450px solid transparent;
+  border-top: 60px solid rgb(111, 96, 245);
+  text-align: center;
+}
+.triangleDown span {
+  position: absolute;
+  margin-top: -60px;
+  margin-left: -260px;
+  width: 600px;
+  height: 50px;
+  font-size: 13px;
+  color: white;
+}
+.btn {
+  transform: rotate(45deg);
+}
+
+.btn .txt {
+  display: inline-block;
+  transform: rotate(-45deg);
+  width: 85px;
+  margin-top: px;
+  margin-left: -10px;
+  text-align: center;
+}
+
+.btn:focus {
+  outline: none;
+}
+.downline {
+  position: absolute;
+  left: 849px;
+  top: 60px;
+  height: 25px;
+  width: 2px;
+  border-left: solid ivory 2px;
+}
+.outline {
+  position: absolute;
+  transform: rotate(-45deg);
+  font-size: 8px;
+  margin-top: -5px;
+  margin-left: 23px;
+  width: 60px;
+}
+/* ------------------------------------ */
+.outline {
+  display: inline-block;
+  padding: 0px 2px;
+  /* padding: 6px 10px;
+    text-decoration: none;
+    text-transform: uppercase; */
+  transition: background 300ms;
+
+  border: none;
+  cursor: pointer;
+}
+.outline {
+  color: white;
+  overflow: hidden;
+  position: relative;
+}
+.outline:before,
+.outline:after,
+.outline .lines:before,
+.outline .lines:after {
+  background-color: rgb(0, 255, 170);
+  content: "";
+  height: 1px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: transform 400ms;
+  width: 100%;
+}
+.outline:before {
+  bottom: 0;
+  top: auto;
+}
+.outline .lines {
+  display: block;
+  height: 100%;
+  left: 0;
+
+  top: 0;
+  width: 100%;
+  z-index: 0;
+}
+.outline .lines:before,
+.outline .lines:after {
+  height: 100%;
+  width: 1px;
+}
+.outline .lines:after {
+  left: auto;
+  right: 0;
+}
+.outline:hover:before {
+  transform: translateX(-101%);
+}
+.outline:hover:after {
+  transform: translateX(101%);
+}
+.outline:hover .lines:before {
+  transform: translateY(-101%);
+}
+.outline:hover .lines:after {
+  transform: translateY(101%);
+}
