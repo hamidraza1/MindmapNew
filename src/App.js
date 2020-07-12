@@ -8,6 +8,7 @@ class App extends Component {
     super(props);
 
     this.myRef = React.createRef();
+    this.myshef = React.createRef();
   }
   state = {
     row1col1: true,
@@ -57,6 +58,7 @@ class App extends Component {
     row9col4: false,
     row9col5: false,
   };
+
   render() {
     var dict = {};
 
@@ -71,23 +73,21 @@ class App extends Component {
       btnbox: false,
 
       style: {
-        width: "80px",
-        height: "80px",
-        backgroundColor: "rgb(111, 96, 245)",
-
+        width: "100px",
+        height: "100px",
+        backgroundColor: "#0096DB",
         color: "white",
-        fontSize: "11px",
-
+        fontSize: "14px",
         border: "0",
         position: "absolute",
-        top: " 100px",
-        left: "810px",
+        top: " 125px",
+        left: "900px",
       },
     };
     dict["row2col1"] = {
       id: "row2col1",
       text:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "Lorem Ipsum is simply dummy text of the printing and setting industry.",
       color: "yellow",
       parentNode: "yellow",
       blueChilds: [],
@@ -95,16 +95,16 @@ class App extends Component {
       display: this.state.row2col1,
       btnbox: false,
       style: {
-        width: "80px",
-        height: "80px",
-        backgroundColor: "rgb(149, 149, 247)",
+        width: "100px",
+        height: "100px",
+        backgroundColor: "#00BBE6",
         color: "white",
-        fontSize: "9px",
+        fontSize: "11px",
 
         border: "0",
         position: "absolute",
-        top: "160px",
-        left: "750px",
+        top: "200px",
+        left: "820px",
         can: "lu",
       },
     };
@@ -117,17 +117,18 @@ class App extends Component {
       yellowChilds: ["row3col2", "row3col3"],
       display: this.state.row2col2,
       btnbox: false,
+      scrolling: false,
       style: {
-        width: "80px",
-        height: "80px",
-        backgroundColor: "rgb(149, 149, 247)",
+        width: "100px",
+        height: "100px",
+        backgroundColor: "#00BBE6",
         color: "white",
-        fontSize: "9px",
+        fontSize: "11px",
 
         border: "0",
         position: "absolute",
-        top: "220px",
-        left: "810px",
+        top: "280px",
+        left: "900px",
       },
     };
     dict["row2col3"] = {
@@ -138,18 +139,19 @@ class App extends Component {
       blueChilds: [],
       yellowChilds: ["row3col4"],
       display: this.state.row2col3,
+      scrolling: true,
       btnbox: false,
       style: {
-        width: "80px",
-        height: "80px",
-        backgroundColor: "rgb(149, 149, 247)",
+        width: "100px",
+        height: "100px",
+        backgroundColor: "#00BBE6",
         color: "white",
-        fontSize: "9px",
+        fontSize: "11px",
 
         border: "0",
         position: "absolute",
-        top: "160px",
-        left: "870px",
+        top: "200px",
+        left: "980px",
         can: "l",
         delay: "100",
       },
@@ -164,18 +166,18 @@ class App extends Component {
       display: this.state.row3col1,
       btnbox: false,
       style: {
-        width: "80px",
-        height: "80px",
+        width: "100px",
+        height: "100px",
 
-        backgroundColor: "rgb(111, 96, 245)",
+        backgroundColor: "#0096DB",
         color: "white",
-        fontSize: "10px",
+        fontSize: "13px",
 
         border: "0",
         position: "absolute",
-        top: "100px",
+        top: "125px",
         left: "350px",
-        delay: "2500",
+        delay: "2000",
       },
     };
     dict["row3col2"] = {
@@ -188,15 +190,15 @@ class App extends Component {
       display: this.state.row3col2,
       btnbox: false,
       style: {
-        width: "80px",
-        height: "80px",
-        backgroundColor: "rgb(149, 149, 247)",
+        width: "100px",
+        height: "100px",
+        backgroundColor: "#00BBE6",
         color: "white",
-        fontSize: "10px",
+        fontSize: "14px",
         border: "0",
         position: "absolute",
-        top: "280px",
-        left: "750px",
+        top: "360px",
+        left: "820px",
         can: "md",
       },
     };
@@ -210,23 +212,23 @@ class App extends Component {
       display: this.state.row3col3,
       btnbox: false,
       style: {
-        width: "80px",
-        height: "80px",
-        backgroundColor: "rgb(149, 149, 247)",
+        width: "100px",
+        height: "100px",
+        backgroundColor: "#00BBE6",
         color: "white",
-        fontSize: "10px",
+        fontSize: "14px",
         border: "0",
 
         position: "absolute",
-        top: "280px",
-        left: "870px",
+        top: "360px",
+        left: "980px",
         can: "dl",
       },
     };
     dict["row3col4"] = {
       id: "row3col4",
       text:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard",
+        "Lorem Ipsum is sim dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard",
       color: "yellow",
       parentNode: "yellow",
       blueChilds: ["row4col5"],
@@ -236,17 +238,18 @@ class App extends Component {
 
       btnboxtxt: "INTERVENTION",
       style: {
-        width: "90px",
-        height: "90px",
-        backgroundColor: "rgb(149, 149, 247)",
+        width: "115px",
+        height: "115px",
+        backgroundColor: "#00BBE6",
 
         color: "white",
-        fontSize: "7px",
+        fontSize: "9px",
         border: "0",
 
         position: "absolute",
-        top: "155px",
-        left: "995px",
+        top: "195px",
+        left: "1150px",
+        marginTop: "-3px",
         can: "l",
         delay: "300",
       },
@@ -261,16 +264,16 @@ class App extends Component {
       display: this.state.row4col1,
       btnbox: false,
       style: {
-        width: "80px",
-        height: "80px",
-        backgroundColor: "rgb(149, 149, 247)",
+        width: "100px",
+        height: "100px",
+        backgroundColor: "#00BBE6",
         color: "white",
-        fontSize: "15px",
+        fontSize: "18px",
 
         border: "0",
         position: "absolute",
-        top: "160px",
-        left: "290px",
+        top: "200px",
+        left: "270px",
         can: "rd",
       },
     };
@@ -285,16 +288,16 @@ class App extends Component {
       display: this.state.row4col2,
       btnbox: false,
       style: {
-        width: "80px",
-        height: "80px",
-        backgroundColor: "rgb(149, 149, 247)",
+        width: "100px",
+        height: "100px",
+        backgroundColor: "#00BBE6",
         color: "white",
-        fontSize: "7px",
+        fontSize: "9px",
 
         border: "0",
         position: "absolute",
-        top: "160px",
-        left: "410px",
+        top: "200px",
+        left: "430px",
         can: "ld",
       },
     };
@@ -309,15 +312,16 @@ class App extends Component {
       display: this.state.row4col3,
       btnbox: false,
       style: {
-        width: "90px",
-        height: "90px",
+        width: "115px",
+        height: "115px",
         backgroundColor: "rgb(126, 141, 126)",
         color: "white",
-        fontSize: "7px",
+        fontSize: "10px",
         border: "0",
+        marginLeft: "3px",
         position: "absolute",
-        top: "420px",
-        left: "745px",
+        top: "525px",
+        left: "810px",
         can: "md",
       },
     };
@@ -331,23 +335,23 @@ class App extends Component {
       display: this.state.row4col4,
       btnbox: false,
       style: {
-        width: "80px",
-        height: "80px",
-        backgroundColor: "rgb(149, 149, 247)",
+        width: "100px",
+        height: "100px",
+        backgroundColor: "#00BBE6",
         color: "white",
-        fontSize: "8px",
+        fontSize: "12px",
         border: "0",
 
         position: "absolute",
-        top: "340px",
-        left: "1140px",
+        top: "400px",
+        left: "1340px",
         delay: "1500",
       },
     };
     dict["row4col5"] = {
       id: "row4col5",
       text:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard",
+        "Lorem Ipsum is sim dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard",
       color: "blue",
       parentNode: "yellow",
       blueChilds: ["row5col6"],
@@ -356,16 +360,16 @@ class App extends Component {
       btnbox: true,
       btnboxtxt: "IVESTIGATION",
       style: {
-        width: "90px",
-        height: "90px",
+        width: "115px",
+        height: "115px",
         backgroundColor: "rgb(126, 141, 126)",
         color: "white",
-        fontSize: "7px",
+        fontSize: "9px",
         border: "0",
-
+        marginTop: "-3px",
         position: "absolute",
-        top: "155px",
-        left: "1135px",
+        top: "195px",
+        left: "1330px",
         can: "l",
       },
     };
@@ -379,16 +383,16 @@ class App extends Component {
       display: this.state.row5col1,
       btnbox: false,
       style: {
-        width: "80px",
-        height: "80px",
-        backgroundColor: "rgb(111, 96, 245)",
+        width: "100px",
+        height: "100px",
+        backgroundColor: "#0096DB",
         color: "white",
-        fontSize: "8px",
+        fontSize: "11px",
 
         border: "0",
         position: "absolute",
-        top: "350px",
-        left: "200px",
+        top: "450px",
+        left: "190px",
         delay: "1000",
       },
     };
@@ -402,16 +406,16 @@ class App extends Component {
       display: this.state.row5col2,
       btnbox: false,
       style: {
-        width: "80px",
-        height: "80px",
-        backgroundColor: "rgb(111, 96, 245)",
+        width: "100px",
+        height: "100px",
+        backgroundColor: "#0096DB",
         color: "white",
-        fontSize: "8px",
+        fontSize: "11px",
 
         border: "0",
         position: "absolute",
-        top: "350px",
-        left: "500px",
+        top: "450px",
+        left: "510px",
         delay: "1000",
       },
     };
@@ -426,15 +430,16 @@ class App extends Component {
       display: this.state.row5col3,
       btnbox: false,
       style: {
-        width: "90px",
-        height: "90px",
+        width: "115px",
+        height: "115px",
         backgroundColor: "rgb(126, 141, 126)",
         color: "white",
-        fontSize: "7px",
+        fontSize: "9.5px",
         border: "0",
+        marginLeft: "3px",
         position: "absolute",
-        top: "560px",
-        left: "745px",
+        top: "710px",
+        left: "810px",
         can: "md",
       },
     };
@@ -447,16 +452,16 @@ class App extends Component {
       yellowChilds: ["row6col6"],
       display: this.state.row5col4,
       style: {
-        width: "80px",
-        height: "80px",
-        backgroundColor: "rgb(149, 149, 247)",
+        width: "100px",
+        height: "100px",
+        backgroundColor: "#00BBE6",
         color: "white",
-        fontSize: "15px",
+        fontSize: "18px",
         border: "0",
 
         position: "absolute",
-        top: "400px",
-        left: "1080px",
+        top: "480px",
+        left: "1260px",
         can: "md",
       },
     };
@@ -470,23 +475,23 @@ class App extends Component {
       display: this.state.row5col5,
       btnbox: false,
       style: {
-        width: "80px",
-        height: "80px",
-        backgroundColor: "rgb(149, 149, 247)",
+        width: "100px",
+        height: "100px",
+        backgroundColor: "#00BBE6",
         color: "white",
-        fontSize: "15px",
+        fontSize: "18px",
         border: "0",
 
         position: "absolute",
-        top: "400px",
-        left: "1200px",
+        top: "480px",
+        left: "1420px",
         can: "l",
       },
     };
     dict["row5col6"] = {
       id: "row5col6",
       text:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard",
+        "Lorem Ipsum is sim dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard",
       color: "blue",
       parentNode: "blue",
       blueChilds: ["row6col8"],
@@ -495,16 +500,16 @@ class App extends Component {
       btnbox: true,
       btnboxtxt: "AUDITS",
       style: {
-        width: "90px",
-        height: "90px",
+        width: "115px",
+        height: "115px",
         backgroundColor: "rgb(126, 141, 126)",
         color: "white",
-        fontSize: "7px",
+        fontSize: "9px",
         border: "0",
-
+        marginTop: "-3px",
         position: "absolute",
-        top: "155px",
-        left: "1270px",
+        top: "195px",
+        left: "1510px",
         can: "l",
       },
     };
@@ -518,17 +523,17 @@ class App extends Component {
       display: this.state.row6col1,
       btnbox: false,
       style: {
-        width: "80px",
-        height: "80px",
-        backgroundColor: "rgb(149, 149, 247)",
+        width: "100px",
+        height: "100px",
+        backgroundColor: "#00BBE6",
         color: "white",
-        fontSize: "15px",
+        fontSize: "18px",
 
         border: "0",
         position: "absolute",
-        top: "410px",
-        left: "140px",
-        can: "rd2",
+        top: "530px",
+        left: "110px",
+        can: "md",
       },
     };
     dict["row6col2"] = {
@@ -541,16 +546,16 @@ class App extends Component {
       display: this.state.row6col2,
       btnbox: false,
       style: {
-        width: "80px",
-        height: "80px",
-        backgroundColor: "rgb(149, 149, 247)",
+        width: "100px",
+        height: "100px",
+        backgroundColor: "#00BBE6",
         color: "white",
-        fontSize: "15px",
+        fontSize: "18px",
 
         border: "0",
         position: "absolute",
-        top: "410px",
-        left: "260px",
+        top: "530px",
+        left: "270px",
         can: "md",
       },
     };
@@ -564,16 +569,16 @@ class App extends Component {
       display: this.state.row6col3,
       btnbox: false,
       style: {
-        width: "80px",
-        height: "80px",
-        backgroundColor: "rgb(149, 149, 247)",
+        width: "100px",
+        height: "100px",
+        backgroundColor: "#00BBE6",
         color: "white",
-        fontSize: "15px",
+        fontSize: "18px",
 
         border: "0",
         position: "absolute",
-        top: "410px",
-        left: "440px",
+        top: "530px",
+        left: "430px",
         can: "md",
       },
     };
@@ -587,17 +592,17 @@ class App extends Component {
       display: this.state.row6col4,
       btnbox: false,
       style: {
-        width: "80px",
-        height: "80px",
-        backgroundColor: "rgb(149, 149, 247)",
+        width: "100px",
+        height: "100px",
+        backgroundColor: "#00BBE6",
         color: "white",
-        fontSize: "15px",
+        fontSize: "18px",
 
         border: "0",
         position: "absolute",
-        top: "410px",
-        left: "560px",
-        can: "ld2",
+        top: "530px",
+        left: "590px",
+        can: "md",
       },
     };
     dict["row6col5"] = {
@@ -611,15 +616,16 @@ class App extends Component {
       display: this.state.row6col5,
       btnbox: false,
       style: {
-        width: "90px",
-        height: "90px",
+        width: "115px",
+        height: "115px",
         backgroundColor: "rgb(126, 141, 126)",
         color: "white",
-        fontSize: "7px",
+        fontSize: "9.5px",
         border: "0",
+        marginLeft: "3px",
         position: "absolute",
-        top: "700px",
-        left: "745px",
+        top: "900px",
+        left: "810px",
       },
     };
     dict["row6col6"] = {
@@ -632,16 +638,16 @@ class App extends Component {
       display: this.state.row6col6,
       btnbox: false,
       style: {
-        width: "80px",
-        height: "80px",
-        backgroundColor: "rgb(111, 96, 245)",
+        width: "100px",
+        height: "100px",
+        backgroundColor: "#0096DB",
         color: "white",
-        fontSize: "9px",
+        fontSize: "12px",
         border: "0",
 
         position: "absolute",
-        top: "530px",
-        left: "1080px",
+        top: "660px",
+        left: "1260px",
       },
     };
     dict["row6col7"] = {
@@ -656,22 +662,22 @@ class App extends Component {
       btnbox: true,
       btnboxtxt: "AUDIT",
       style: {
-        width: "90px",
-        height: "90px",
+        width: "115px",
+        height: "115px",
         backgroundColor: "rgb(126, 141, 126)",
         color: "white",
-        fontSize: "8px",
+        fontSize: "9.5px",
         border: "0",
-
+        marginTop: "2px",
         position: "absolute",
-        top: "395px",
-        left: "1340px",
+        top: "470px",
+        left: "1590px",
       },
     };
     dict["row6col8"] = {
       id: "row6col8",
       text:
-        "Lorem Ipsum is simplytext of the printing and typesetting industry. Lorem Ipsum has been the industry's standard",
+        "Lorem Ipsum is sim of the printing and typesetting industry. Lorem Ipsum has been the industry's standard",
       color: "blue",
       parentNode: "blue",
       blueChilds: ["row7col7"],
@@ -680,16 +686,16 @@ class App extends Component {
       btnbox: true,
       btnboxtxt: "SERVICE MANAGES",
       style: {
-        width: "90px",
-        height: "90px",
+        width: "115px",
+        height: "115px",
         backgroundColor: "rgb(126, 141, 126)",
         color: "white",
-        fontSize: "5px",
+        fontSize: "8.5px",
         border: "0",
-
+        marginTop: "-3px",
         position: "absolute",
-        top: "155px",
-        left: "1405px",
+        top: "195px",
+        left: "1690px",
       },
     };
     dict["row7col1"] = {
@@ -704,16 +710,16 @@ class App extends Component {
       btnbox: true,
       btnboxtxt: "AUDIT",
       style: {
-        width: "90px",
-        height: "90px",
+        width: "115px",
+        height: "115px",
         backgroundColor: "rgb(126, 141, 126)",
         color: "white",
-        fontSize: "8px",
-
+        fontSize: "11px",
+        marginLeft: "2px",
         border: "0",
         position: "absolute",
-        top: "500px",
-        left: "20px",
+        top: "750px",
+        left: "100px",
         delay: "800",
       },
     };
@@ -728,16 +734,16 @@ class App extends Component {
       display: this.state.row7col2,
       btnbox: false,
       style: {
-        width: "90px",
-        height: "90px",
+        width: "115px",
+        height: "115px",
         backgroundColor: "rgb(126, 141, 126)",
         color: "white",
-        fontSize: "8px",
-
+        fontSize: "11px",
+        marginLeft: "2px",
         border: "0",
         position: "absolute",
-        top: "550px",
-        left: "255px",
+        top: "710px",
+        left: "260px",
         can: "md",
         delay: "500",
       },
@@ -754,16 +760,16 @@ class App extends Component {
       btnbox: true,
       btnboxtxt: "SERVICE MANAGES",
       style: {
-        width: "90px",
-        height: "90px",
+        width: "115px",
+        height: "115px",
         backgroundColor: "rgb(126, 141, 126)",
         color: "white",
-        fontSize: "5.5px",
-
+        fontSize: "8px",
+        marginLeft: "2px",
         border: "0",
         position: "absolute",
-        top: "550px",
-        left: "435px",
+        top: "690px",
+        left: "420px",
         can: "md",
         delay: "500",
       },
@@ -780,16 +786,16 @@ class App extends Component {
       btnbox: true,
       btnboxtxt: "AUDIT",
       style: {
-        width: "90px",
-        height: "90px",
+        width: "115px",
+        height: "115px",
         backgroundColor: "rgb(126, 141, 126)",
         color: "white",
-        fontSize: "7px",
-
+        fontSize: "8px",
+        marginLeft: "-2.5px",
         border: "0",
         position: "absolute",
-        top: "550px",
-        left: "620px",
+        top: "720px",
+        left: "585px",
         can: "md",
         delay: "800",
       },
@@ -804,16 +810,16 @@ class App extends Component {
       display: this.state.row7col5,
       btnbox: false,
       style: {
-        width: "80px",
-        height: "80px",
-        backgroundColor: "rgb(149, 149, 247)",
+        width: "100px",
+        height: "100px",
+        backgroundColor: "#00BBE6",
         color: "white",
-        fontSize: "9px",
+        fontSize: "12px",
         border: "0",
 
         position: "absolute",
-        top: "590px",
-        left: "1020px",
+        top: "740px",
+        left: "1180px",
         can: "ldr",
       },
     };
@@ -827,16 +833,16 @@ class App extends Component {
       display: this.state.row7col6,
       btnbox: false,
       style: {
-        width: "80px",
-        height: "80px",
-        backgroundColor: "rgb(149, 149, 247)",
+        width: "100px",
+        height: "100px",
+        backgroundColor: "#00BBE6",
         color: "white",
-        fontSize: "9px",
+        fontSize: "12px",
         border: "0",
 
         position: "absolute",
-        top: "590px",
-        left: "1140px",
+        top: "740px",
+        left: "1340px",
         can: "l",
       },
     };
@@ -870,16 +876,16 @@ class App extends Component {
       btnboxtxt: "THREAT INTELL.",
       display: this.state.row8col1,
       style: {
-        width: "90px",
-        height: "90px",
+        width: "115px",
+        height: "115px",
         backgroundColor: "rgb(126, 141, 126)",
         color: "white",
-        fontSize: "5.5px",
-
+        fontSize: "8px",
+        marginLeft: "2px",
         border: "0",
         position: "absolute",
-        top: "690px",
-        left: "255px",
+        top: "900px",
+        left: "260px",
         can: "md",
       },
     };
@@ -895,16 +901,16 @@ class App extends Component {
       btnbox: true,
       btnboxtxt: "FORMATIONS",
       style: {
-        width: "90px",
-        height: "90px",
+        width: "115px",
+        height: "115px",
         backgroundColor: "rgb(126, 141, 126)",
         color: "white",
-        fontSize: "7px",
-
+        fontSize: "8px",
+        marginLeft: "2px",
         border: "0",
         position: "absolute",
-        top: "690px",
-        left: "435px",
+        top: "880px",
+        left: "420px",
       },
     };
     dict["row8col3"] = {
@@ -919,16 +925,16 @@ class App extends Component {
       btnbox: true,
       btnboxtxt: "SERVICE MANAGES",
       style: {
-        width: "90px",
-        height: "90px",
+        width: "115px",
+        height: "115px",
         backgroundColor: "rgb(126, 141, 126)",
         color: "white",
-        fontSize: "5.5px",
-
+        fontSize: "8px",
+        marginLeft: "2.5px",
         border: "0",
         position: "absolute",
-        top: "690px",
-        left: "620px",
+        top: "930px",
+        left: "585px",
         can: "md",
       },
     };
@@ -942,17 +948,17 @@ class App extends Component {
       display: this.state.row8col4,
       btnbox: false,
       style: {
-        width: "80px",
-        height: "80px",
-        backgroundColor: "rgb(149, 149, 247)",
+        width: "100px",
+        height: "100px",
+        backgroundColor: "#00BBE6",
         color: "white",
-        fontSize: "9px",
+        fontSize: "11px",
         border: "0",
 
         position: "absolute",
-        top: "760px",
-        left: "960px",
-        can: "r",
+        top: "920px",
+        left: "1100px",
+        can: "rd2",
       },
     };
     dict["row8col5"] = {
@@ -965,16 +971,16 @@ class App extends Component {
       display: this.state.row8col5,
       btnbox: false,
       style: {
-        width: "80px",
-        height: "80px",
-        backgroundColor: "rgb(149, 149, 247)",
+        width: "100px",
+        height: "100px",
+        backgroundColor: "#00BBE6",
         color: "white",
-        fontSize: "9px",
+        fontSize: "11px",
         border: "0",
 
         position: "absolute",
-        top: "820px",
-        left: "1020px",
+        top: "1000px",
+        left: "1180px",
         can: "md",
       },
     };
@@ -988,17 +994,17 @@ class App extends Component {
       display: this.state.row8col6,
       btnbox: false,
       style: {
-        width: "80px",
-        height: "80px",
-        backgroundColor: "rgb(149, 149, 247)",
+        width: "100px",
+        height: "100px",
+        backgroundColor: "#00BBE6",
         color: "white",
-        fontSize: "9px",
+        fontSize: "11px",
         border: "0",
 
         position: "absolute",
-        top: "760px",
-        left: "1080px",
-        can: "l",
+        top: "920px",
+        left: "1260px",
+        can: "ld2",
         delay: "800",
       },
     };
@@ -1013,16 +1019,16 @@ class App extends Component {
       btnbox: true,
       btnboxtxt: "AUDIT",
       style: {
-        width: "90px",
-        height: "90px",
+        width: "115px",
+        height: "115px",
         backgroundColor: "rgb(126, 141, 126)",
         color: "white",
-        fontSize: "9px",
+        fontSize: "11px",
         border: "0",
-
+        marginTop: "2px",
         position: "absolute",
-        top: "585px",
-        left: "1280px",
+        top: "730px",
+        left: "1520px",
       },
     };
     dict["row9col1"] = {
@@ -1037,16 +1043,16 @@ class App extends Component {
       btnbox: true,
       btnboxtxt: "SERVICE MANAGES",
       style: {
-        width: "90px",
-        height: "90px",
+        width: "115px",
+        height: "115px",
         backgroundColor: "rgb(126, 141, 126)",
         color: "white",
-        fontSize: "5.5px",
-
+        fontSize: "7.5px",
+        marginLeft: "2px",
         border: "0",
         position: "absolute",
-        top: "830px",
-        left: "255px",
+        top: "1100px",
+        left: "260px",
       },
     };
     dict["row9col2"] = {
@@ -1061,16 +1067,16 @@ class App extends Component {
       btnboxtxt: "FORMATIONS",
       display: this.state.row9col2,
       style: {
-        width: "90px",
-        height: "90px",
+        width: "115px",
+        height: "115px",
         backgroundColor: "rgb(126, 141, 126)",
         color: "white",
-        fontSize: "7px",
-
+        fontSize: "8px",
+        marginLeft: "2px",
         border: "0",
         position: "absolute",
-        top: "830px",
-        left: "620px",
+        top: "1130px",
+        left: "585px",
       },
     };
     dict["row9col3"] = {
@@ -1085,16 +1091,16 @@ class App extends Component {
       btnbox: true,
       btnboxtxt: "SERVICE MANAGES",
       style: {
-        width: "90px",
-        height: "90px",
+        width: "115px",
+        height: "115px",
         backgroundColor: "rgb(126, 141, 126)",
         color: "white",
-        fontSize: "5.5px",
+        fontSize: "8px",
         border: "0",
-
+        marginLeft: "3px",
         position: "absolute",
-        top: "755px",
-        left: "825px",
+        top: "1030px",
+        left: "935px",
       },
     };
     dict["row9col4"] = {
@@ -1109,16 +1115,16 @@ class App extends Component {
       btnbox: true,
       btnboxtxt: "CONSULTING",
       style: {
-        width: "90px",
-        height: "90px",
+        width: "115px",
+        height: "115px",
         backgroundColor: "rgb(126, 141, 126)",
         color: "white",
-        fontSize: "7px",
+        fontSize: "8px",
         border: "0",
-
+        marginLeft: "-3px",
         position: "absolute",
-        top: "945px",
-        left: "1015px",
+        top: "1165px",
+        left: "1175px",
       },
     };
     dict["row9col5"] = {
@@ -1133,16 +1139,16 @@ class App extends Component {
       btnbox: true,
       btnboxtxt: "FORMATIONS",
       style: {
-        width: "90px",
-        height: "90px",
+        width: "115px",
+        height: "115px",
         backgroundColor: "rgb(126, 141, 126)",
         color: "white",
-        fontSize: "7px",
+        fontSize: "8px",
         border: "0",
-
+        marginLeft: "-3px",
         position: "absolute",
-        top: "755px",
-        left: "1250px",
+        top: "1030px",
+        left: "1425px",
       },
     };
 
@@ -1167,7 +1173,7 @@ class App extends Component {
           c.moveTo(startX, startY);
           x = x + 5;
           c.lineTo(startX, startY + x);
-          if (startY + x === endY) {
+          if (startY + x === endY - 20) {
             condition = false;
           }
         }
@@ -1175,7 +1181,7 @@ class App extends Component {
           c.moveTo(startX, startY);
           x = x + 5;
           c.lineTo(startX + x, startY);
-          if (startX + x === endX) {
+          if (startX + x === endX - 20) {
             condition = false;
           }
         }
@@ -1192,7 +1198,7 @@ class App extends Component {
             c.moveTo(startX, startY);
             x = x + 5;
             c.lineTo(startX, startY + x);
-            if (startY + x === endY + 100) {
+            if (startY + x === endY + 130) {
               condition = false;
             }
           }
@@ -1201,7 +1207,7 @@ class App extends Component {
             c.moveTo(startX, startY + x);
             y = y + 5;
             c.lineTo(startX + y, startY + x);
-            if (startX + y === endX) {
+            if (startX + y === endX - 100) {
               condition2 = false;
             }
           }
@@ -1211,7 +1217,7 @@ class App extends Component {
             c.moveTo(startX, startY);
             x = x + 5;
             c.lineTo(startX + x, startY);
-            if (startX + x === endX + 40) {
+            if (startX + x === endX + 50) {
               condition = false;
             }
           }
@@ -1219,7 +1225,7 @@ class App extends Component {
             c.moveTo(startX + x, startY);
             y = y + 5;
             c.lineTo(startX + x, startY + y);
-            if (startY + y === endY) {
+            if (startY + y === endY - 20) {
               condition2 = false;
             }
           }
@@ -1230,7 +1236,7 @@ class App extends Component {
             c.moveTo(startX, startY);
             x = x + 5;
             c.lineTo(startX + x, startY);
-            if (startX + x === endX + 45) {
+            if (startX + x === endX + 55) {
               condition = false;
             }
           }
@@ -1248,7 +1254,7 @@ class App extends Component {
             c.moveTo(startX, startY);
             x = x + 5;
             c.lineTo(startX - x, startY);
-            if (startX - x === endX + 40) {
+            if (startX - x === endX + 50) {
               condition = false;
             }
           }
@@ -1256,7 +1262,7 @@ class App extends Component {
             c.moveTo(startX - x, startY);
             y = y + 5;
             c.lineTo(startX - x, startY + y);
-            if (startY + y === endY) {
+            if (startY + y === endY - 20) {
               condition2 = false;
             }
           }
@@ -1266,7 +1272,7 @@ class App extends Component {
             c.moveTo(startX, startY);
             x = x + 5;
             c.lineTo(startX - x, startY);
-            if (startX - x === endX + 45) {
+            if (startX - x === endX + 60) {
               condition = false;
             }
           }
@@ -1284,7 +1290,7 @@ class App extends Component {
             c.moveTo(startX, startY);
             x = x + 5;
             c.lineTo(startX - x, startY);
-            if (startX - x === endX + 270) {
+            if (startX - x === endX + 300) {
               condition = false;
             }
           }
@@ -1292,7 +1298,7 @@ class App extends Component {
             c.moveTo(startX - x, startY);
             y = y + 5;
             c.lineTo(startX - x, startY - y);
-            if (startY - y === endY - 15) {
+            if (startY - y === endY - 20) {
               condition2 = false;
             }
           }
@@ -1300,7 +1306,7 @@ class App extends Component {
             c.moveTo(startX - x, startY - y);
             z = z + 5;
             c.lineTo(startX - x - z, startY - y);
-            if (startX - x - z === endX + 40) {
+            if (startX - x - z === endX + 50) {
               condition3 = false;
             }
           }
@@ -1311,7 +1317,7 @@ class App extends Component {
             c.moveTo(startX, startY);
             x = x + 5;
             c.lineTo(startX, startY + x);
-            if (startY + x === endY - 15) {
+            if (startY + x === endY - 20) {
               condition = false;
             }
           }
@@ -1320,7 +1326,7 @@ class App extends Component {
             c.moveTo(startX, startY + x);
             y = y + 5;
             c.lineTo(startX + y, startY + x);
-            if (startX + y === endX + 40) {
+            if (startX + y === endX + 50) {
               condition2 = false;
             }
           }
@@ -1328,7 +1334,7 @@ class App extends Component {
             c.moveTo(startX, startY + x);
             z = z + 5;
             c.lineTo(startX - z, startY + x);
-            if (startX - z === endX - 80) {
+            if (startX - z === endX - 110) {
               condition3 = false;
             }
           }
@@ -1336,14 +1342,14 @@ class App extends Component {
             c.moveTo(startX, startY + x);
             w = w + 5;
             c.lineTo(startX, startY + x + w);
-            if (startY + x + w === endY + 45) {
+            if (startY + x + w === endY + 60) {
               condition4 = false;
             }
           }
         }
 
         c.stroke();
-      }, 30);
+      }, 20);
     };
 
     var delay = (ms) => new Promise((res) => setTimeout(res, ms));
@@ -1356,117 +1362,182 @@ class App extends Component {
       dict[e].yellowChilds.map((el) => {
         this.setState({ [dict[el].id]: true });
 
-        dict[el].blueChilds.map((elb) => {
-          this.setState({ [dict[elb].id]: true });
-          draw(
-            parseInt(
-              dict[el].style.left.slice(0, dict[el].style.left.indexOf("p"))
-            ) + 45,
-            parseInt(
-              dict[el].style.top.slice(0, dict[el].style.top.indexOf("p"))
-            ) + 45,
-            parseInt(
-              dict[
-                dict[el].blueChilds[dict[el].blueChilds.length - 1]
-              ].style.left.slice(
-                0,
-                dict[
-                  dict[el].blueChilds[dict[el].blueChilds.length - 1]
-                ].style.left.indexOf("p")
-              )
-            ),
-            parseInt(
-              dict[
-                dict[el].blueChilds[dict[el].blueChilds.length - 1]
-              ].style.top.slice(
-                0,
-                dict[
-                  dict[el].blueChilds[dict[el].blueChilds.length - 1]
-                ].style.top.indexOf("p")
-              )
-            ),
-            el
-          );
-
-          dict[elb].blueChilds.map((els) => {
-            this.setState({ [dict[els].id]: true });
+        setTimeout(() => {
+          dict[el].blueChilds.map((elb) => {
+            this.setState({ [dict[elb].id]: true });
             draw(
               parseInt(
-                dict[elb].style.left.slice(0, dict[elb].style.left.indexOf("p"))
-              ) + 45,
+                dict[el].style.left.slice(0, dict[el].style.left.indexOf("p"))
+              ) + 60,
               parseInt(
-                dict[elb].style.top.slice(0, dict[elb].style.top.indexOf("p"))
-              ) + 45,
+                dict[el].style.top.slice(0, dict[el].style.top.indexOf("p"))
+              ) + 55,
               parseInt(
                 dict[
-                  dict[elb].blueChilds[dict[elb].blueChilds.length - 1]
+                  dict[el].blueChilds[dict[el].blueChilds.length - 1]
                 ].style.left.slice(
                   0,
                   dict[
-                    dict[elb].blueChilds[dict[elb].blueChilds.length - 1]
+                    dict[el].blueChilds[dict[el].blueChilds.length - 1]
                   ].style.left.indexOf("p")
                 )
               ),
               parseInt(
                 dict[
-                  dict[elb].blueChilds[dict[elb].blueChilds.length - 1]
+                  dict[el].blueChilds[dict[el].blueChilds.length - 1]
                 ].style.top.slice(
                   0,
                   dict[
-                    dict[elb].blueChilds[dict[elb].blueChilds.length - 1]
+                    dict[el].blueChilds[dict[el].blueChilds.length - 1]
                   ].style.top.indexOf("p")
                 )
               ),
-              elb
+              el
             );
 
-            dict[els].blueChilds.map((elt) => {
-              this.setState({ [dict[elt].id]: true });
-              draw(
-                parseInt(
-                  dict[els].style.left.slice(
-                    0,
-                    dict[els].style.left.indexOf("p")
-                  )
-                ) + 45,
-                parseInt(
-                  dict[els].style.top.slice(0, dict[els].style.top.indexOf("p"))
-                ) + 45,
-                parseInt(
-                  dict[
-                    dict[els].blueChilds[dict[els].blueChilds.length - 1]
-                  ].style.left.slice(
-                    0,
+            setTimeout(() => {
+              dict[elb].blueChilds.map((els) => {
+                this.setState({ [dict[els].id]: true });
+                draw(
+                  parseInt(
+                    dict[elb].style.left.slice(
+                      0,
+                      dict[elb].style.left.indexOf("p")
+                    )
+                  ) + 60,
+                  parseInt(
+                    dict[elb].style.top.slice(
+                      0,
+                      dict[elb].style.top.indexOf("p")
+                    )
+                  ) + 55,
+                  parseInt(
                     dict[
-                      dict[els].blueChilds[dict[els].blueChilds.length - 1]
-                    ].style.left.indexOf("p")
-                  )
-                ),
-                parseInt(
-                  dict[
-                    dict[els].blueChilds[dict[els].blueChilds.length - 1]
-                  ].style.top.slice(
-                    0,
+                      dict[elb].blueChilds[dict[elb].blueChilds.length - 1]
+                    ].style.left.slice(
+                      0,
+                      dict[
+                        dict[elb].blueChilds[dict[elb].blueChilds.length - 1]
+                      ].style.left.indexOf("p")
+                    )
+                  ),
+                  parseInt(
                     dict[
-                      dict[els].blueChilds[dict[els].blueChilds.length - 1]
-                    ].style.top.indexOf("p")
-                  )
-                ),
-                els
-              );
-            });
+                      dict[elb].blueChilds[dict[elb].blueChilds.length - 1]
+                    ].style.top.slice(
+                      0,
+                      dict[
+                        dict[elb].blueChilds[dict[elb].blueChilds.length - 1]
+                      ].style.top.indexOf("p")
+                    )
+                  ),
+                  elb
+                );
+
+                setTimeout(() => {
+                  dict[els].blueChilds.map((elt) => {
+                    this.setState({ [dict[elt].id]: true });
+                    draw(
+                      parseInt(
+                        dict[els].style.left.slice(
+                          0,
+                          dict[els].style.left.indexOf("p")
+                        )
+                      ) + 60,
+                      parseInt(
+                        dict[els].style.top.slice(
+                          0,
+                          dict[els].style.top.indexOf("p")
+                        )
+                      ) + 55,
+                      parseInt(
+                        dict[
+                          dict[els].blueChilds[dict[els].blueChilds.length - 1]
+                        ].style.left.slice(
+                          0,
+                          dict[
+                            dict[els].blueChilds[
+                              dict[els].blueChilds.length - 1
+                            ]
+                          ].style.left.indexOf("p")
+                        )
+                      ),
+                      parseInt(
+                        dict[
+                          dict[els].blueChilds[dict[els].blueChilds.length - 1]
+                        ].style.top.slice(
+                          0,
+                          dict[
+                            dict[els].blueChilds[
+                              dict[els].blueChilds.length - 1
+                            ]
+                          ].style.top.indexOf("p")
+                        )
+                      ),
+                      els
+                    );
+                  });
+                  /* window.scrollX(60); */
+                  /* var shef = this.myshef.current;
+                  shef.scrollLeft = 20; */
+                  console.log("hi");
+                }, 1000);
+              });
+            }, 1000);
           });
-        });
+        }, 1000);
       });
     };
+    const scrollFunction = (e) => {
+      if (
+        dict[e].id === "row2col3" ||
+        dict[e].id === "row3col3" ||
+        dict[e].id === "row5col5" ||
+        dict[e].id === "row7col6" ||
+        dict[e].id === "row8col6"
+      ) {
+        window.scrollTo({ left: 1000, behavior: "smooth" });
+      }
+      if (
+        dict[e].id === "row7col5" ||
+        dict[e].id === "row8col5" ||
+        dict[e].id === "row3col2"
+      ) {
+        window.scroll({ top: 1000, behavior: "smooth" });
+      }
+      if (dict[e].id === "row5col4") {
+        window.scroll({ top: 200, behavior: "smooth" });
+      }
+      if (
+        dict[e].id === "row2col1" ||
+        dict[e].id === "row4col2" ||
+        dict[e].id === "row4col1"
+      ) {
+        window.scroll({ left: 0, top: 0, behavior: "smooth" });
+      }
+      if (dict[e].id === "row3col2") {
+        window.scroll({ top: 340, behavior: "smooth" });
+      }
+      if (dict[e].id === "row6col4") {
+        window.scroll({ top: 600, behavior: "smooth" });
+      }
+      if (
+        dict[e].id === "row6col3" ||
+        dict[e].id === "row6col2" ||
+        dict[e].id === "row6col1"
+      ) {
+        window.scroll({ left: 0, top: 500, behavior: "smooth" });
+      }
+    };
+
     return (
-      <div>
+      <div ref={this.myshef} style={{ width: "1900px", height: "1200px" }}>
         <canvas
           className={classes.c}
           style={{ position: "absolute", zIndex: "-1" }}
           ref={this.myRef}
-          width="1520"
-          height="1000"
+          width="1900"
+          height="1200"
         ></canvas>
 
         <div className={classes.triangleDown}>
@@ -1479,7 +1550,7 @@ class App extends Component {
         {Object.keys(dict).map((key, index) =>
           dict[key].display ? (
             <Animated
-              animationIn="pulse"
+              animationIn="fadeIn"
               animationOut="fadeOutX"
               isVisible={true}
             >
@@ -1502,13 +1573,13 @@ class App extends Component {
                             0,
                             dict[key].style.left.indexOf("p")
                           )
-                        ) + 40,
+                        ) + 50,
                         parseInt(
                           dict[key].style.top.slice(
                             0,
                             dict[key].style.top.indexOf("p")
                           )
-                        ) + 40,
+                        ) + 50,
                         parseInt(
                           dict[
                             dict[key].yellowChilds[
@@ -1540,6 +1611,7 @@ class App extends Component {
                         dict[key].id
                       );
                       finction(dict[key].id);
+                      scrollFunction(dict[key].id);
                     }
                   }
                 }}

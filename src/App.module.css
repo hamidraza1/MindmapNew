@@ -4,7 +4,7 @@ body {
 .triangleDown {
   position: absolute;
   top: 0;
-  left: 400px;
+  left: 500px;
   width: 0;
   height: 0;
   border-left: 450px solid transparent;
@@ -15,23 +15,38 @@ body {
 .triangleDown span {
   position: absolute;
   margin-top: -60px;
-  margin-left: -260px;
-  width: 600px;
-  height: 50px;
-  font-size: 13px;
+  margin-left: -270px;
+  width: 560px;
+  height: 75px;
+  font-size: 14px;
   color: white;
 }
 .btn {
   transform: rotate(45deg);
+  padding: 0;
+  text-shadow: 1px 1px #f76464;
+  transform: scale(1) rotate(45deg);
+  transition: transform 0.2s ease-in-out;
+}
+.btn:hover {
+  transform: scale(1.1) rotate(45deg);
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
 }
 
 .btn .txt {
   display: inline-block;
   transform: rotate(-45deg);
-  width: 85px;
+  text-align: center;
+  position: relative;
+  left: -5px;
+  width: 100px;
+  /* margin-left: -10px;
+  width: 108px; */
+  /*  width: 108px;
   margin-top: px;
   margin-left: -10px;
-  text-align: center;
+  text-align: center; */
 }
 
 .btn:focus {
@@ -39,24 +54,25 @@ body {
 }
 .downline {
   position: absolute;
-  left: 849px;
+  left: 949px;
   top: 60px;
-  height: 25px;
+  height: 50px;
   width: 2px;
   border-left: solid ivory 2px;
 }
 .outline {
-  position: absolute;
   transform: rotate(-45deg);
-  font-size: 8px;
-  margin-top: -5px;
-  margin-left: 23px;
-  width: 60px;
+
+  position: absolute;
+  font-size: px;
+  top: -5px;
+  left: 19px;
+  width: px;
 }
 /* ------------------------------------ */
 .outline {
   display: inline-block;
-  padding: 0px 2px;
+  padding: 4px 4px;
   /* padding: 6px 10px;
     text-decoration: none;
     text-transform: uppercase; */
@@ -74,9 +90,9 @@ body {
 .outline:after,
 .outline .lines:before,
 .outline .lines:after {
-  background-color: rgb(0, 255, 170);
+  background-color: white;
   content: "";
-  height: 1px;
+  height: 2px;
   left: 0;
   position: absolute;
   top: 0;
@@ -99,7 +115,7 @@ body {
 .outline .lines:before,
 .outline .lines:after {
   height: 100%;
-  width: 1px;
+  width: 2px;
 }
 .outline .lines:after {
   left: auto;
