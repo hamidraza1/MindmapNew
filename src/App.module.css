@@ -1,10 +1,16 @@
+@font-face {
+  font-family: "forza";
+  src: url("./Forza-Book.ttf");
+  font-style: normal;
+  font-weight: 400;
+}
 body {
   background-color: black;
 }
 .triangleDown {
   position: absolute;
   top: 0;
-  left: 500px;
+  left: 1048px;
   width: 0;
   height: 0;
   border-left: 450px solid transparent;
@@ -20,6 +26,7 @@ body {
   height: 75px;
   font-size: 14px;
   color: white;
+  font-family: "forza";
 }
 .btn {
   transform: rotate(45deg);
@@ -39,22 +46,40 @@ body {
   transform: rotate(-45deg);
   text-align: center;
   position: relative;
-  left: -5px;
-  width: 100px;
-  /* margin-left: -10px;
-  width: 108px; */
-  /*  width: 108px;
-  margin-top: px;
-  margin-left: -10px;
-  text-align: center; */
+  top: 4px;
+  left: px;
+  width: px;
+  font-family: "forza";
 }
 
 .btn:focus {
   outline: none;
 }
+.btn2 {
+  transform: rotate(45deg);
+  padding: 0;
+  text-shadow: 1px 1px #f76464;
+}
+.btn2:hover {
+}
+
+.btn2 .txt {
+  display: inline-block;
+  transform: rotate(-45deg);
+  text-align: center;
+  position: relative;
+  top: 4px;
+  left: -2px;
+  width: px;
+  font-family: "forza";
+}
+
+.btn2:focus {
+  outline: none;
+}
 .downline {
   position: absolute;
-  left: 949px;
+  left: 1498px;
   top: 60px;
   height: 50px;
   width: 2px;
@@ -62,12 +87,14 @@ body {
 }
 .outline {
   transform: rotate(-45deg);
+  font-size: 12px;
 
   position: absolute;
-  font-size: px;
-  top: -5px;
-  left: 19px;
-  width: px;
+
+  top: -2px;
+  left: 30px;
+  width: 118px;
+  font-family: "forza";
 }
 /* ------------------------------------ */
 .outline {

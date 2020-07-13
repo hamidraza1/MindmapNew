@@ -57,6 +57,28 @@ class App extends Component {
     row9col3: false,
     row9col4: false,
     row9col5: false,
+    Crow1col1: true,
+    Crow2col1: true,
+    Crow2col2: true,
+    Crow2col3: true,
+    Crow3col1: true,
+    Crow3col2: true,
+    Crow3col3: true,
+    Crow4col1: true,
+    Crow4col2: true,
+
+    Crow5col4: true,
+    Crow5col5: true,
+    Crow6col1: true,
+    Crow6col2: true,
+    Crow6col3: true,
+    Crow6col4: true,
+    Crow6col6: true,
+    Crow7col5: true,
+    Crow7col6: true,
+    Crow8col4: true,
+    Crow8col5: true,
+    Crow8col6: true,
   };
 
   render() {
@@ -64,24 +86,25 @@ class App extends Component {
 
     dict["row1col1"] = {
       id: "row1col1",
-      text: "Lorem Ipsum is simply ",
+      text: "Lorem Ipsum is simply? ",
       color: "yellow",
       parentNode: "yellow",
       blueChilds: [],
       yellowChilds: ["row2col1", "row2col2", "row2col3"],
       display: this.state.row1col1,
       btnbox: false,
+      clickable: this.state.Crow1col1,
 
       style: {
-        width: "100px",
-        height: "100px",
+        width: "150px",
+        height: "150px",
         backgroundColor: "#0096DB",
         color: "white",
-        fontSize: "14px",
+        fontSize: "20px",
         border: "0",
         position: "absolute",
-        top: " 125px",
-        left: "900px",
+        top: " 140px",
+        left: "1425px",
       },
     };
     dict["row2col1"] = {
@@ -93,18 +116,20 @@ class App extends Component {
       blueChilds: [],
       yellowChilds: ["row3col1"],
       display: this.state.row2col1,
+      clickable: this.state.Crow2col1,
       btnbox: false,
+
       style: {
-        width: "100px",
-        height: "100px",
+        width: "150px",
+        height: "150px",
         backgroundColor: "#00BBE6",
         color: "white",
-        fontSize: "11px",
+        fontSize: "14px",
 
         border: "0",
         position: "absolute",
-        top: "200px",
-        left: "820px",
+        top: "255px",
+        left: "1305px",
         can: "lu",
       },
     };
@@ -116,19 +141,20 @@ class App extends Component {
       blueChilds: [],
       yellowChilds: ["row3col2", "row3col3"],
       display: this.state.row2col2,
+      clickable: this.state.Crow2col2,
       btnbox: false,
       scrolling: false,
       style: {
-        width: "100px",
-        height: "100px",
+        width: "150px",
+        height: "150px",
         backgroundColor: "#00BBE6",
         color: "white",
-        fontSize: "11px",
+        fontSize: "16px",
 
         border: "0",
         position: "absolute",
-        top: "280px",
-        left: "900px",
+        top: "370px",
+        left: "1425px",
       },
     };
     dict["row2col3"] = {
@@ -139,45 +165,47 @@ class App extends Component {
       blueChilds: [],
       yellowChilds: ["row3col4"],
       display: this.state.row2col3,
+      clickable: this.state.Crow2col3,
       scrolling: true,
       btnbox: false,
       style: {
-        width: "100px",
-        height: "100px",
+        width: "150px",
+        height: "150px",
         backgroundColor: "#00BBE6",
         color: "white",
-        fontSize: "11px",
+        fontSize: "16px",
 
         border: "0",
         position: "absolute",
-        top: "200px",
-        left: "980px",
+        top: "255px",
+        left: "1545px",
         can: "l",
         delay: "100",
       },
     };
     dict["row3col1"] = {
       id: "row3col1",
-      text: "Lorem Ipsum is simply dummy",
+      text: "Lorem Ipsum is simply dummy?",
       color: "yellow",
       parentNode: "yellow",
       blueChilds: ["row4col1", "row4col2"],
       yellowChilds: [],
       display: this.state.row3col1,
+      clickable: this.state.Crow3col1,
       btnbox: false,
       style: {
-        width: "100px",
-        height: "100px",
+        width: "150px",
+        height: "150px",
 
         backgroundColor: "#0096DB",
         color: "white",
-        fontSize: "13px",
+        fontSize: "16px",
 
         border: "0",
         position: "absolute",
-        top: "125px",
-        left: "350px",
-        delay: "2000",
+        top: "140px",
+        left: "525px",
+        delay: "1000",
       },
     };
     dict["row3col2"] = {
@@ -188,17 +216,18 @@ class App extends Component {
       blueChilds: [],
       yellowChilds: ["row4col3"],
       display: this.state.row3col2,
+      clickable: this.state.Crow3col2,
       btnbox: false,
       style: {
-        width: "100px",
-        height: "100px",
+        width: "150px",
+        height: "150px",
         backgroundColor: "#00BBE6",
         color: "white",
-        fontSize: "14px",
+        fontSize: "18px",
         border: "0",
         position: "absolute",
-        top: "360px",
-        left: "820px",
+        top: "485px",
+        left: "1305px",
         can: "md",
       },
     };
@@ -210,18 +239,19 @@ class App extends Component {
       blueChilds: [],
       yellowChilds: ["row4col4"],
       display: this.state.row3col3,
+      clickable: this.state.Crow3col3,
       btnbox: false,
       style: {
-        width: "100px",
-        height: "100px",
+        width: "150px",
+        height: "150px",
         backgroundColor: "#00BBE6",
         color: "white",
-        fontSize: "14px",
+        fontSize: "18px",
         border: "0",
 
         position: "absolute",
-        top: "360px",
-        left: "980px",
+        top: "485px",
+        left: "1545px",
         can: "dl",
       },
     };
@@ -238,18 +268,18 @@ class App extends Component {
 
       btnboxtxt: "INTERVENTION",
       style: {
-        width: "115px",
-        height: "115px",
-        backgroundColor: "#00BBE6",
+        width: "175px",
+        height: "175px",
+        backgroundColor: "#15B2B1",
 
         color: "white",
-        fontSize: "9px",
+        fontSize: "12px",
         border: "0",
 
         position: "absolute",
-        top: "195px",
-        left: "1150px",
-        marginTop: "-3px",
+        top: "245px",
+        left: "1800px",
+        marginTop: "-2.5px",
         can: "l",
         delay: "300",
       },
@@ -262,18 +292,19 @@ class App extends Component {
       blueChilds: [],
       yellowChilds: ["row5col1"],
       display: this.state.row4col1,
+      clickable: this.state.Crow4col1,
       btnbox: false,
       style: {
-        width: "100px",
-        height: "100px",
+        width: "150px",
+        height: "150px",
         backgroundColor: "#00BBE6",
         color: "white",
-        fontSize: "18px",
+        fontSize: "22px",
 
         border: "0",
         position: "absolute",
-        top: "200px",
-        left: "270px",
+        top: "255px",
+        left: "405px",
         can: "rd",
       },
     };
@@ -286,18 +317,19 @@ class App extends Component {
       blueChilds: [],
       yellowChilds: ["row5col2"],
       display: this.state.row4col2,
+      clickable: this.state.Crow4col2,
       btnbox: false,
       style: {
-        width: "100px",
-        height: "100px",
+        width: "150px",
+        height: "150px",
         backgroundColor: "#00BBE6",
         color: "white",
-        fontSize: "9px",
+        fontSize: "13px",
 
         border: "0",
         position: "absolute",
-        top: "200px",
-        left: "430px",
+        top: "255px",
+        left: "645px",
         can: "ld",
       },
     };
@@ -312,22 +344,22 @@ class App extends Component {
       display: this.state.row4col3,
       btnbox: false,
       style: {
-        width: "115px",
-        height: "115px",
-        backgroundColor: "rgb(126, 141, 126)",
+        width: "175px",
+        height: "175px",
+        backgroundColor: "#00BBE6",
         color: "white",
-        fontSize: "10px",
+        fontSize: "15px",
         border: "0",
-        marginLeft: "3px",
+        marginLeft: "2.5px",
         position: "absolute",
-        top: "525px",
-        left: "810px",
+        top: "755px",
+        left: "1290px",
         can: "md",
       },
     };
     dict["row4col4"] = {
       id: "row4col4",
-      text: "Lorem Ipsum is simply dummy text ",
+      text: "Lorem Ipsum is simply dummy text? ",
       color: "yellow",
       parentNode: "yellow",
       blueChilds: ["row5col4", "row5col5"],
@@ -335,17 +367,17 @@ class App extends Component {
       display: this.state.row4col4,
       btnbox: false,
       style: {
-        width: "100px",
-        height: "100px",
-        backgroundColor: "#00BBE6",
+        width: "150px",
+        height: "150px",
+        backgroundColor: "#0096DB",
         color: "white",
-        fontSize: "12px",
+        fontSize: "16px",
         border: "0",
 
         position: "absolute",
-        top: "400px",
-        left: "1340px",
-        delay: "1500",
+        top: "590px",
+        left: "2080px",
+        delay: "0",
       },
     };
     dict["row4col5"] = {
@@ -358,24 +390,24 @@ class App extends Component {
       yellowChilds: [],
       display: this.state.row4col5,
       btnbox: true,
-      btnboxtxt: "IVESTIGATION",
+      btnboxtxt: "INVESTIGATION",
       style: {
-        width: "115px",
-        height: "115px",
-        backgroundColor: "rgb(126, 141, 126)",
+        width: "175px",
+        height: "175px",
+        backgroundColor: "#15B2B1",
         color: "white",
-        fontSize: "9px",
+        fontSize: "12px",
         border: "0",
-        marginTop: "-3px",
+        marginTop: "-2.5px",
         position: "absolute",
-        top: "195px",
-        left: "1330px",
+        top: "245px",
+        left: "2080px",
         can: "l",
       },
     };
     dict["row5col1"] = {
       id: "row5col1",
-      text: "Lorem Ipsum is simply dummy text of the printing and typesetting",
+      text: "Lorem Ipsum is simply dummy text of the printing and typesetting?",
       color: "yellow",
       parentNode: "blue",
       blueChilds: ["row6col1", "row6col2"],
@@ -383,22 +415,22 @@ class App extends Component {
       display: this.state.row5col1,
       btnbox: false,
       style: {
-        width: "100px",
-        height: "100px",
+        width: "150px",
+        height: "150px",
         backgroundColor: "#0096DB",
         color: "white",
-        fontSize: "11px",
+        fontSize: "14px",
 
         border: "0",
         position: "absolute",
-        top: "450px",
-        left: "190px",
-        delay: "1000",
+        top: "555px",
+        left: "260px",
+        delay: "400",
       },
     };
     dict["row5col2"] = {
       id: "row5col2",
-      text: "Lorem Ipsum is simply dummy text of the printing and typesetting",
+      text: "Lorem Ipsum is simply dummy text of the printing and typesetting?",
       color: "yellow",
       parentNode: "blue",
       blueChilds: ["row6col3", "row6col4"],
@@ -406,17 +438,17 @@ class App extends Component {
       display: this.state.row5col2,
       btnbox: false,
       style: {
-        width: "100px",
-        height: "100px",
+        width: "150px",
+        height: "150px",
         backgroundColor: "#0096DB",
         color: "white",
-        fontSize: "11px",
+        fontSize: "14px",
 
         border: "0",
         position: "absolute",
-        top: "450px",
-        left: "510px",
-        delay: "1000",
+        top: "555px",
+        left: "790px",
+        delay: "400",
       },
     };
     dict["row5col3"] = {
@@ -430,16 +462,16 @@ class App extends Component {
       display: this.state.row5col3,
       btnbox: false,
       style: {
-        width: "115px",
-        height: "115px",
-        backgroundColor: "rgb(126, 141, 126)",
+        width: "175px",
+        height: "175px",
+        backgroundColor: "#00BBE6",
         color: "white",
-        fontSize: "9.5px",
+        fontSize: "13px",
         border: "0",
-        marginLeft: "3px",
+        marginLeft: "2.5px",
         position: "absolute",
-        top: "710px",
-        left: "810px",
+        top: "1055px",
+        left: "1290px",
         can: "md",
       },
     };
@@ -451,17 +483,18 @@ class App extends Component {
       blueChilds: [],
       yellowChilds: ["row6col6"],
       display: this.state.row5col4,
+      clickable: this.state.Crow5col4,
       style: {
-        width: "100px",
-        height: "100px",
+        width: "150px",
+        height: "150px",
         backgroundColor: "#00BBE6",
         color: "white",
-        fontSize: "18px",
+        fontSize: "22px",
         border: "0",
 
         position: "absolute",
-        top: "480px",
-        left: "1260px",
+        top: "705px",
+        left: "1960px",
         can: "md",
       },
     };
@@ -473,18 +506,19 @@ class App extends Component {
       blueChilds: [],
       yellowChilds: ["row6col7"],
       display: this.state.row5col5,
+      clickable: this.state.Crow5col5,
       btnbox: false,
       style: {
-        width: "100px",
-        height: "100px",
+        width: "150px",
+        height: "150px",
         backgroundColor: "#00BBE6",
         color: "white",
-        fontSize: "18px",
+        fontSize: "22px",
         border: "0",
 
         position: "absolute",
-        top: "480px",
-        left: "1420px",
+        top: "705px",
+        left: "2200px",
         can: "l",
       },
     };
@@ -500,16 +534,16 @@ class App extends Component {
       btnbox: true,
       btnboxtxt: "AUDITS",
       style: {
-        width: "115px",
-        height: "115px",
-        backgroundColor: "rgb(126, 141, 126)",
+        width: "175px",
+        height: "175px",
+        backgroundColor: "#15B2B1",
         color: "white",
-        fontSize: "9px",
+        fontSize: "12px",
         border: "0",
-        marginTop: "-3px",
+        marginTop: "-2.5px",
         position: "absolute",
-        top: "195px",
-        left: "1510px",
+        top: "245px",
+        left: "2350px",
         can: "l",
       },
     };
@@ -521,18 +555,19 @@ class App extends Component {
       blueChilds: [],
       yellowChilds: ["row7col1"],
       display: this.state.row6col1,
+      clickable: this.state.Crow6col1,
       btnbox: false,
       style: {
-        width: "100px",
-        height: "100px",
+        width: "150px",
+        height: "150px",
         backgroundColor: "#00BBE6",
         color: "white",
-        fontSize: "18px",
+        fontSize: "22px",
 
         border: "0",
         position: "absolute",
-        top: "530px",
-        left: "110px",
+        top: "670px",
+        left: "140px",
         can: "md",
       },
     };
@@ -544,18 +579,19 @@ class App extends Component {
       blueChilds: [],
       yellowChilds: ["row7col2"],
       display: this.state.row6col2,
+      clickable: this.state.Crow6col2,
       btnbox: false,
       style: {
-        width: "100px",
-        height: "100px",
+        width: "150px",
+        height: "150px",
         backgroundColor: "#00BBE6",
         color: "white",
-        fontSize: "18px",
+        fontSize: "22px",
 
         border: "0",
         position: "absolute",
-        top: "530px",
-        left: "270px",
+        top: "670px",
+        left: "380px",
         can: "md",
       },
     };
@@ -567,18 +603,19 @@ class App extends Component {
       blueChilds: [],
       yellowChilds: ["row7col3"],
       display: this.state.row6col3,
+      clickable: this.state.Crow6col3,
       btnbox: false,
       style: {
-        width: "100px",
-        height: "100px",
+        width: "150px",
+        height: "150px",
         backgroundColor: "#00BBE6",
         color: "white",
-        fontSize: "18px",
+        fontSize: "22px",
 
         border: "0",
         position: "absolute",
-        top: "530px",
-        left: "430px",
+        top: "670px",
+        left: "670px",
         can: "md",
       },
     };
@@ -590,25 +627,26 @@ class App extends Component {
       blueChilds: [],
       yellowChilds: ["row7col4"],
       display: this.state.row6col4,
+      clickable: this.state.Crow6col4,
       btnbox: false,
       style: {
-        width: "100px",
-        height: "100px",
+        width: "150px",
+        height: "150px",
         backgroundColor: "#00BBE6",
         color: "white",
-        fontSize: "18px",
+        fontSize: "22px",
 
         border: "0",
         position: "absolute",
-        top: "530px",
-        left: "590px",
+        top: "670px",
+        left: "910px",
         can: "md",
       },
     };
     dict["row6col5"] = {
       id: "row6col5",
       text:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's",
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's?",
       color: "blue",
       parentNode: "yellow",
       blueChilds: [],
@@ -616,16 +654,16 @@ class App extends Component {
       display: this.state.row6col5,
       btnbox: false,
       style: {
-        width: "115px",
-        height: "115px",
-        backgroundColor: "rgb(126, 141, 126)",
+        width: "175px",
+        height: "175px",
+        backgroundColor: "#00BBE6",
         color: "white",
-        fontSize: "9.5px",
+        fontSize: "13px",
         border: "0",
-        marginLeft: "3px",
+        marginLeft: "2.5px",
         position: "absolute",
-        top: "900px",
-        left: "810px",
+        top: "1350px",
+        left: "1290px",
       },
     };
     dict["row6col6"] = {
@@ -635,19 +673,20 @@ class App extends Component {
       parentNode: "blue",
       blueChilds: [],
       yellowChilds: ["row7col5", "row7col6"],
+      clickable: this.state.Crow6col6,
       display: this.state.row6col6,
       btnbox: false,
       style: {
-        width: "100px",
-        height: "100px",
+        width: "150px",
+        height: "150px",
         backgroundColor: "#0096DB",
         color: "white",
-        fontSize: "12px",
+        fontSize: "16px",
         border: "0",
 
         position: "absolute",
-        top: "660px",
-        left: "1260px",
+        top: "1000px",
+        left: "1960px",
       },
     };
     dict["row6col7"] = {
@@ -662,16 +701,16 @@ class App extends Component {
       btnbox: true,
       btnboxtxt: "AUDIT",
       style: {
-        width: "115px",
-        height: "115px",
-        backgroundColor: "rgb(126, 141, 126)",
+        width: "175px",
+        height: "175px",
+        backgroundColor: "#15B2B1",
         color: "white",
-        fontSize: "9.5px",
+        fontSize: "13px",
         border: "0",
         marginTop: "2px",
         position: "absolute",
-        top: "470px",
-        left: "1590px",
+        top: "690px",
+        left: "2460px",
       },
     };
     dict["row6col8"] = {
@@ -686,16 +725,16 @@ class App extends Component {
       btnbox: true,
       btnboxtxt: "SERVICE MANAGES",
       style: {
-        width: "115px",
-        height: "115px",
-        backgroundColor: "rgb(126, 141, 126)",
+        width: "175px",
+        height: "175px",
+        backgroundColor: "#15B2B1",
         color: "white",
-        fontSize: "8.5px",
+        fontSize: "12px",
         border: "0",
-        marginTop: "-3px",
+        marginTop: "-2.5px",
         position: "absolute",
-        top: "195px",
-        left: "1690px",
+        top: "245px",
+        left: "2620px",
       },
     };
     dict["row7col1"] = {
@@ -710,17 +749,17 @@ class App extends Component {
       btnbox: true,
       btnboxtxt: "AUDIT",
       style: {
-        width: "115px",
-        height: "115px",
-        backgroundColor: "rgb(126, 141, 126)",
+        width: "175px",
+        height: "175px",
+        backgroundColor: "#15B2B1",
         color: "white",
-        fontSize: "11px",
-        marginLeft: "2px",
+        fontSize: "13px",
+        marginLeft: "2.5px",
         border: "0",
         position: "absolute",
-        top: "750px",
-        left: "100px",
-        delay: "800",
+        top: "920px",
+        left: "125px",
+        delay: "0",
       },
     };
     dict["row7col2"] = {
@@ -734,16 +773,16 @@ class App extends Component {
       display: this.state.row7col2,
       btnbox: false,
       style: {
-        width: "115px",
-        height: "115px",
-        backgroundColor: "rgb(126, 141, 126)",
+        width: "175px",
+        height: "175px",
+        backgroundColor: "#00BBE6",
         color: "white",
-        fontSize: "11px",
-        marginLeft: "2px",
+        fontSize: "15px",
+        marginLeft: "2.5px",
         border: "0",
         position: "absolute",
-        top: "710px",
-        left: "260px",
+        top: "1000px",
+        left: "365px",
         can: "md",
         delay: "500",
       },
@@ -760,16 +799,16 @@ class App extends Component {
       btnbox: true,
       btnboxtxt: "SERVICE MANAGES",
       style: {
-        width: "115px",
-        height: "115px",
-        backgroundColor: "rgb(126, 141, 126)",
+        width: "175px",
+        height: "175px",
+        backgroundColor: "#15B2B1",
         color: "white",
-        fontSize: "8px",
-        marginLeft: "2px",
+        fontSize: "11px",
+        marginLeft: "2.5px",
         border: "0",
         position: "absolute",
-        top: "690px",
-        left: "420px",
+        top: "1000px",
+        left: "655px",
         can: "md",
         delay: "500",
       },
@@ -786,16 +825,16 @@ class App extends Component {
       btnbox: true,
       btnboxtxt: "AUDIT",
       style: {
-        width: "115px",
-        height: "115px",
-        backgroundColor: "rgb(126, 141, 126)",
+        width: "175px",
+        height: "175px",
+        backgroundColor: "#15B2B1",
         color: "white",
-        fontSize: "8px",
-        marginLeft: "-2.5px",
+        fontSize: "11px",
+        marginLeft: "2.5px",
         border: "0",
         position: "absolute",
-        top: "720px",
-        left: "585px",
+        top: "920px",
+        left: "895px",
         can: "md",
         delay: "800",
       },
@@ -808,18 +847,19 @@ class App extends Component {
       blueChilds: [],
       yellowChilds: ["row8col4", "row8col5", "row8col6"],
       display: this.state.row7col5,
+      clickable: this.state.Crow7col5,
       btnbox: false,
       style: {
-        width: "100px",
-        height: "100px",
+        width: "150px",
+        height: "150px",
         backgroundColor: "#00BBE6",
         color: "white",
-        fontSize: "12px",
+        fontSize: "16px",
         border: "0",
 
         position: "absolute",
-        top: "740px",
-        left: "1180px",
+        top: "1115px",
+        left: "1840px",
         can: "ldr",
       },
     };
@@ -831,18 +871,19 @@ class App extends Component {
       blueChilds: [],
       yellowChilds: ["row8col7"],
       display: this.state.row7col6,
+      clickable: this.state.Crow7col6,
       btnbox: false,
       style: {
-        width: "100px",
-        height: "100px",
+        width: "150px",
+        height: "150px",
         backgroundColor: "#00BBE6",
         color: "white",
-        fontSize: "12px",
+        fontSize: "16px",
         border: "0",
 
         position: "absolute",
-        top: "740px",
-        left: "1340px",
+        top: "1115px",
+        left: "2080px",
         can: "l",
       },
     };
@@ -876,16 +917,16 @@ class App extends Component {
       btnboxtxt: "THREAT INTELL.",
       display: this.state.row8col1,
       style: {
-        width: "115px",
-        height: "115px",
-        backgroundColor: "rgb(126, 141, 126)",
+        width: "175px",
+        height: "175px",
+        backgroundColor: "#15B2B1",
         color: "white",
-        fontSize: "8px",
-        marginLeft: "2px",
+        fontSize: "10px",
+        marginLeft: "2.5px",
         border: "0",
         position: "absolute",
-        top: "900px",
-        left: "260px",
+        top: "1350px",
+        left: "365px",
         can: "md",
       },
     };
@@ -901,16 +942,16 @@ class App extends Component {
       btnbox: true,
       btnboxtxt: "FORMATIONS",
       style: {
-        width: "115px",
-        height: "115px",
-        backgroundColor: "rgb(126, 141, 126)",
+        width: "175px",
+        height: "175px",
+        backgroundColor: "#15B2B1",
         color: "white",
-        fontSize: "8px",
-        marginLeft: "2px",
+        fontSize: "11px",
+        marginLeft: "2.5px",
         border: "0",
         position: "absolute",
-        top: "880px",
-        left: "420px",
+        top: "1350px",
+        left: "655px",
       },
     };
     dict["row8col3"] = {
@@ -925,16 +966,16 @@ class App extends Component {
       btnbox: true,
       btnboxtxt: "SERVICE MANAGES",
       style: {
-        width: "115px",
-        height: "115px",
-        backgroundColor: "rgb(126, 141, 126)",
+        width: "175px",
+        height: "175px",
+        backgroundColor: "#15B2B1",
         color: "white",
-        fontSize: "8px",
+        fontSize: "10px",
         marginLeft: "2.5px",
         border: "0",
         position: "absolute",
-        top: "930px",
-        left: "585px",
+        top: "1205px",
+        left: "895px",
         can: "md",
       },
     };
@@ -946,18 +987,19 @@ class App extends Component {
       blueChilds: [],
       yellowChilds: ["row9col3"],
       display: this.state.row8col4,
+      clickable: this.state.Crow8col4,
       btnbox: false,
       style: {
-        width: "100px",
-        height: "100px",
+        width: "150px",
+        height: "150px",
         backgroundColor: "#00BBE6",
         color: "white",
-        fontSize: "11px",
+        fontSize: "14px",
         border: "0",
 
         position: "absolute",
-        top: "920px",
-        left: "1100px",
+        top: "1485px",
+        left: "1720px",
         can: "rd2",
       },
     };
@@ -969,18 +1011,19 @@ class App extends Component {
       blueChilds: [],
       yellowChilds: ["row9col4"],
       display: this.state.row8col5,
+      clickable: this.state.Crow8col5,
       btnbox: false,
       style: {
-        width: "100px",
-        height: "100px",
+        width: "150px",
+        height: "150px",
         backgroundColor: "#00BBE6",
         color: "white",
-        fontSize: "11px",
+        fontSize: "14px",
         border: "0",
 
         position: "absolute",
-        top: "1000px",
-        left: "1180px",
+        top: "1600px",
+        left: "1840px",
         can: "md",
       },
     };
@@ -992,20 +1035,21 @@ class App extends Component {
       blueChilds: [],
       yellowChilds: ["row9col5"],
       display: this.state.row8col6,
+      clickable: this.state.Crow8col6,
       btnbox: false,
       style: {
-        width: "100px",
-        height: "100px",
+        width: "150px",
+        height: "150px",
         backgroundColor: "#00BBE6",
         color: "white",
-        fontSize: "11px",
+        fontSize: "14px",
         border: "0",
 
         position: "absolute",
-        top: "920px",
-        left: "1260px",
+        top: "1485px",
+        left: "1960px",
         can: "ld2",
-        delay: "800",
+        delay: "0",
       },
     };
     dict["row8col7"] = {
@@ -1019,16 +1063,16 @@ class App extends Component {
       btnbox: true,
       btnboxtxt: "AUDIT",
       style: {
-        width: "115px",
-        height: "115px",
-        backgroundColor: "rgb(126, 141, 126)",
+        width: "175px",
+        height: "175px",
+        backgroundColor: "#15B2B1",
         color: "white",
-        fontSize: "11px",
+        fontSize: "14px",
         border: "0",
         marginTop: "2px",
         position: "absolute",
-        top: "730px",
-        left: "1520px",
+        top: "1100px",
+        left: "2350px",
       },
     };
     dict["row9col1"] = {
@@ -1043,16 +1087,16 @@ class App extends Component {
       btnbox: true,
       btnboxtxt: "SERVICE MANAGES",
       style: {
-        width: "115px",
-        height: "115px",
-        backgroundColor: "rgb(126, 141, 126)",
+        width: "175px",
+        height: "175px",
+        backgroundColor: "#15B2B1",
         color: "white",
-        fontSize: "7.5px",
-        marginLeft: "2px",
+        fontSize: "10px",
+        marginLeft: "2.5px",
         border: "0",
         position: "absolute",
-        top: "1100px",
-        left: "260px",
+        top: "1700px",
+        left: "365px",
       },
     };
     dict["row9col2"] = {
@@ -1067,16 +1111,17 @@ class App extends Component {
       btnboxtxt: "FORMATIONS",
       display: this.state.row9col2,
       style: {
-        width: "115px",
-        height: "115px",
-        backgroundColor: "rgb(126, 141, 126)",
+        width: "175px",
+        height: "175px",
+        backgroundColor: "#15B2B1",
         color: "white",
-        fontSize: "8px",
-        marginLeft: "2px",
+        marginLeft: "px",
+        fontSize: "11px",
+        marginLeft: "2.5px",
         border: "0",
         position: "absolute",
-        top: "1130px",
-        left: "585px",
+        top: "1500px",
+        left: "895px",
       },
     };
     dict["row9col3"] = {
@@ -1091,16 +1136,16 @@ class App extends Component {
       btnbox: true,
       btnboxtxt: "SERVICE MANAGES",
       style: {
-        width: "115px",
-        height: "115px",
-        backgroundColor: "rgb(126, 141, 126)",
+        width: "175px",
+        height: "175px",
+        backgroundColor: "#15B2B1",
         color: "white",
-        fontSize: "8px",
+        fontSize: "10px",
         border: "0",
-        marginLeft: "3px",
+        marginLeft: "2.5px",
         position: "absolute",
-        top: "1030px",
-        left: "935px",
+        top: "1730px",
+        left: "1500px",
       },
     };
     dict["row9col4"] = {
@@ -1115,16 +1160,16 @@ class App extends Component {
       btnbox: true,
       btnboxtxt: "CONSULTING",
       style: {
-        width: "115px",
-        height: "115px",
-        backgroundColor: "rgb(126, 141, 126)",
+        width: "175px",
+        height: "175px",
+        backgroundColor: "#15B2B1",
         color: "white",
-        fontSize: "8px",
+        fontSize: "10px",
         border: "0",
-        marginLeft: "-3px",
+        marginLeft: "-2.5px",
         position: "absolute",
-        top: "1165px",
-        left: "1175px",
+        top: "1855px",
+        left: "1830px",
       },
     };
     dict["row9col5"] = {
@@ -1139,16 +1184,16 @@ class App extends Component {
       btnbox: true,
       btnboxtxt: "FORMATIONS",
       style: {
-        width: "115px",
-        height: "115px",
-        backgroundColor: "rgb(126, 141, 126)",
+        width: "175px",
+        height: "175px",
+        backgroundColor: "#15B2B1",
         color: "white",
-        fontSize: "8px",
+        fontSize: "10px",
         border: "0",
-        marginLeft: "-3px",
+        marginLeft: "-2.5px",
         position: "absolute",
-        top: "1030px",
-        left: "1425px",
+        top: "1730px",
+        left: "2180px",
       },
     };
 
@@ -1198,7 +1243,7 @@ class App extends Component {
             c.moveTo(startX, startY);
             x = x + 5;
             c.lineTo(startX, startY + x);
-            if (startY + x === endY + 130) {
+            if (startY + x === endY + 190) {
               condition = false;
             }
           }
@@ -1207,7 +1252,7 @@ class App extends Component {
             c.moveTo(startX, startY + x);
             y = y + 5;
             c.lineTo(startX + y, startY + x);
-            if (startX + y === endX - 100) {
+            if (startX + y === endX - 150) {
               condition2 = false;
             }
           }
@@ -1217,7 +1262,7 @@ class App extends Component {
             c.moveTo(startX, startY);
             x = x + 5;
             c.lineTo(startX + x, startY);
-            if (startX + x === endX + 50) {
+            if (startX + x === endX + 75) {
               condition = false;
             }
           }
@@ -1236,7 +1281,7 @@ class App extends Component {
             c.moveTo(startX, startY);
             x = x + 5;
             c.lineTo(startX + x, startY);
-            if (startX + x === endX + 55) {
+            if (startX + x === endX + 85) {
               condition = false;
             }
           }
@@ -1254,7 +1299,7 @@ class App extends Component {
             c.moveTo(startX, startY);
             x = x + 5;
             c.lineTo(startX - x, startY);
-            if (startX - x === endX + 50) {
+            if (startX - x === endX + 75) {
               condition = false;
             }
           }
@@ -1272,7 +1317,7 @@ class App extends Component {
             c.moveTo(startX, startY);
             x = x + 5;
             c.lineTo(startX - x, startY);
-            if (startX - x === endX + 60) {
+            if (startX - x === endX + 90) {
               condition = false;
             }
           }
@@ -1290,7 +1335,7 @@ class App extends Component {
             c.moveTo(startX, startY);
             x = x + 5;
             c.lineTo(startX - x, startY);
-            if (startX - x === endX + 300) {
+            if (startX - x === endX + 500) {
               condition = false;
             }
           }
@@ -1298,7 +1343,7 @@ class App extends Component {
             c.moveTo(startX - x, startY);
             y = y + 5;
             c.lineTo(startX - x, startY - y);
-            if (startY - y === endY - 20) {
+            if (startY - y === endY - 30) {
               condition2 = false;
             }
           }
@@ -1306,7 +1351,7 @@ class App extends Component {
             c.moveTo(startX - x, startY - y);
             z = z + 5;
             c.lineTo(startX - x - z, startY - y);
-            if (startX - x - z === endX + 50) {
+            if (startX - x - z === endX + 75) {
               condition3 = false;
             }
           }
@@ -1317,7 +1362,7 @@ class App extends Component {
             c.moveTo(startX, startY);
             x = x + 5;
             c.lineTo(startX, startY + x);
-            if (startY + x === endY - 20) {
+            if (startY + x === endY - 30) {
               condition = false;
             }
           }
@@ -1326,7 +1371,7 @@ class App extends Component {
             c.moveTo(startX, startY + x);
             y = y + 5;
             c.lineTo(startX + y, startY + x);
-            if (startX + y === endX + 50) {
+            if (startX + y === endX + 75) {
               condition2 = false;
             }
           }
@@ -1334,7 +1379,7 @@ class App extends Component {
             c.moveTo(startX, startY + x);
             z = z + 5;
             c.lineTo(startX - z, startY + x);
-            if (startX - z === endX - 110) {
+            if (startX - z === endX - 165) {
               condition3 = false;
             }
           }
@@ -1342,14 +1387,14 @@ class App extends Component {
             c.moveTo(startX, startY + x);
             w = w + 5;
             c.lineTo(startX, startY + x + w);
-            if (startY + x + w === endY + 60) {
+            if (startY + x + w === endY + 90) {
               condition4 = false;
             }
           }
         }
 
         c.stroke();
-      }, 20);
+      }, 10);
     };
 
     var delay = (ms) => new Promise((res) => setTimeout(res, ms));
@@ -1361,17 +1406,40 @@ class App extends Component {
 
       dict[e].yellowChilds.map((el) => {
         this.setState({ [dict[el].id]: true });
+        window.scrollTo({
+          top:
+            dict[el].style.top.slice(0, dict[el].style.top.indexOf("p")) - 150,
+          left:
+            dict[el].style.left.slice(0, dict[el].style.left.indexOf("p")) -
+            300,
+          behavior: "smooth",
+        });
 
         setTimeout(() => {
           dict[el].blueChilds.map((elb) => {
             this.setState({ [dict[elb].id]: true });
+            if (dict[el].blueChilds.length < 2) {
+              window.scrollTo({
+                top:
+                  dict[elb].style.top.slice(
+                    0,
+                    dict[elb].style.top.indexOf("p")
+                  ) - 150,
+                left:
+                  dict[elb].style.left.slice(
+                    0,
+                    dict[elb].style.left.indexOf("p")
+                  ) - 300,
+                behavior: "smooth",
+              });
+            }
             draw(
               parseInt(
                 dict[el].style.left.slice(0, dict[el].style.left.indexOf("p"))
-              ) + 60,
+              ) + 90,
               parseInt(
                 dict[el].style.top.slice(0, dict[el].style.top.indexOf("p"))
-              ) + 55,
+              ) + 85,
               parseInt(
                 dict[
                   dict[el].blueChilds[dict[el].blueChilds.length - 1]
@@ -1398,19 +1466,32 @@ class App extends Component {
             setTimeout(() => {
               dict[elb].blueChilds.map((els) => {
                 this.setState({ [dict[els].id]: true });
+                window.scrollTo({
+                  top:
+                    dict[els].style.top.slice(
+                      0,
+                      dict[els].style.top.indexOf("p")
+                    ) - 150,
+                  left:
+                    dict[els].style.left.slice(
+                      0,
+                      dict[els].style.left.indexOf("p")
+                    ) - 300,
+                  behavior: "smooth",
+                });
                 draw(
                   parseInt(
                     dict[elb].style.left.slice(
                       0,
                       dict[elb].style.left.indexOf("p")
                     )
-                  ) + 60,
+                  ) + 90,
                   parseInt(
                     dict[elb].style.top.slice(
                       0,
                       dict[elb].style.top.indexOf("p")
                     )
-                  ) + 55,
+                  ) + 85,
                   parseInt(
                     dict[
                       dict[elb].blueChilds[dict[elb].blueChilds.length - 1]
@@ -1437,19 +1518,32 @@ class App extends Component {
                 setTimeout(() => {
                   dict[els].blueChilds.map((elt) => {
                     this.setState({ [dict[elt].id]: true });
+                    window.scrollTo({
+                      top:
+                        dict[elt].style.top.slice(
+                          0,
+                          dict[elt].style.top.indexOf("p")
+                        ) - 150,
+                      left:
+                        dict[elt].style.left.slice(
+                          0,
+                          dict[elt].style.left.indexOf("p")
+                        ) - 300,
+                      behavior: "smooth",
+                    });
                     draw(
                       parseInt(
                         dict[els].style.left.slice(
                           0,
                           dict[els].style.left.indexOf("p")
                         )
-                      ) + 60,
+                      ) + 90,
                       parseInt(
                         dict[els].style.top.slice(
                           0,
                           dict[els].style.top.indexOf("p")
                         )
-                      ) + 55,
+                      ) + 85,
                       parseInt(
                         dict[
                           dict[els].blueChilds[dict[els].blueChilds.length - 1]
@@ -1489,24 +1583,24 @@ class App extends Component {
       });
     };
     const scrollFunction = (e) => {
-      if (
+      /* if (
         dict[e].id === "row2col3" ||
         dict[e].id === "row3col3" ||
         dict[e].id === "row5col5" ||
-        dict[e].id === "row7col6" ||
-        dict[e].id === "row8col6"
+        dict[e].id === "row7col6"
       ) {
-        window.scrollTo({ left: 1000, behavior: "smooth" });
+        window.scrollTo({ top: 200, left: 2000, behavior: "smooth" });
       }
       if (
-        dict[e].id === "row7col5" ||
         dict[e].id === "row8col5" ||
+        dict[e].id === "row8col4" ||
+        dict[e].id === "row8col6" ||
         dict[e].id === "row3col2"
       ) {
-        window.scroll({ top: 1000, behavior: "smooth" });
+        window.scroll({ top: 1500, left: 2000, behavior: "smooth" });
       }
       if (dict[e].id === "row5col4") {
-        window.scroll({ top: 200, behavior: "smooth" });
+        window.scroll({ top: 600, left: 2000, behavior: "smooth" });
       }
       if (
         dict[e].id === "row2col1" ||
@@ -1528,16 +1622,45 @@ class App extends Component {
       ) {
         window.scroll({ left: 0, top: 500, behavior: "smooth" });
       }
+      if (dict[e].id === "row7col5") {
+        window.scroll({ top: 1080, left: 1000, behavior: "smooth" });
+      } */
+    };
+    const clickfunction = (e) => {
+      this.setState({
+        /*    Crow1col1: false,
+        Crow2col1: false,
+        Crow2col2: false,
+        Crow2col3: false,
+        Crow3col1: false,
+        Crow3col2: false,
+        Crow3col3: false,
+        Crow4col1: false,
+        Crow4col2: false,
+
+        Crow5col4: false,
+        Crow5col5: false,
+        Crow6col1: false,
+        Crow6col2: false,
+        Crow6col3: false,
+        Crow6col4: false,
+        Crow6col6: false,
+        Crow7col5: false,
+        Crow7col6: false,
+        Crow8col4: false,
+        Crow8col5: false,
+        Crow8col6: false, */
+      });
     };
 
     return (
-      <div ref={this.myshef} style={{ width: "1900px", height: "1200px" }}>
+      <div ref={this.myshef} style={{ width: "2900px", height: "2100px" }}>
         <canvas
           className={classes.c}
           style={{ position: "absolute", zIndex: "-1" }}
           ref={this.myRef}
-          width="1900"
-          height="1200"
+          width="2900"
+          height="2100"
         ></canvas>
 
         <div className={classes.triangleDown}>
@@ -1556,7 +1679,7 @@ class App extends Component {
             >
               <button
                 style={dict[key].style}
-                className={classes.btn}
+                className={dict[key].clickable ? classes.btn : classes.btn2}
                 key={index}
                 onClick={function (event) {
                   {
@@ -1573,13 +1696,13 @@ class App extends Component {
                             0,
                             dict[key].style.left.indexOf("p")
                           )
-                        ) + 50,
+                        ) + 75,
                         parseInt(
                           dict[key].style.top.slice(
                             0,
                             dict[key].style.top.indexOf("p")
                           )
-                        ) + 50,
+                        ) + 75,
                         parseInt(
                           dict[
                             dict[key].yellowChilds[
@@ -1612,6 +1735,7 @@ class App extends Component {
                       );
                       finction(dict[key].id);
                       scrollFunction(dict[key].id);
+                      clickfunction(dict[key].id);
                     }
                   }
                 }}
