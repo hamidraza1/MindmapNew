@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/MindmapNew/static/css/main.d59afb93.chunk.css",
+    "main.css": "/MindmapNew/static/css/main.40bbdbfd.chunk.css",
     "main.js": "/MindmapNew/static/js/main.d867d951.chunk.js",
     "main.js.map": "/MindmapNew/static/js/main.d867d951.chunk.js.map",
     "runtime-main.js": "/MindmapNew/static/js/runtime-main.3684a5dc.js",
@@ -8,16 +8,16 @@
     "static/js/2.7cc3d5f8.chunk.js": "/MindmapNew/static/js/2.7cc3d5f8.chunk.js",
     "static/js/2.7cc3d5f8.chunk.js.map": "/MindmapNew/static/js/2.7cc3d5f8.chunk.js.map",
     "index.html": "/MindmapNew/index.html",
-    "precache-manifest.2c4512a76a0dbdb6ad75861c0565885d.js": "/MindmapNew/precache-manifest.2c4512a76a0dbdb6ad75861c0565885d.js",
+    "precache-manifest.ac5b720fe47b891c83b73cec14e5e81b.js": "/MindmapNew/precache-manifest.ac5b720fe47b891c83b73cec14e5e81b.js",
     "service-worker.js": "/MindmapNew/service-worker.js",
-    "static/css/main.d59afb93.chunk.css.map": "/MindmapNew/static/css/main.d59afb93.chunk.css.map",
+    "static/css/main.40bbdbfd.chunk.css.map": "/MindmapNew/static/css/main.40bbdbfd.chunk.css.map",
     "static/js/2.7cc3d5f8.chunk.js.LICENSE.txt": "/MindmapNew/static/js/2.7cc3d5f8.chunk.js.LICENSE.txt",
     "static/media/App.module.css": "/MindmapNew/static/media/Forza-Book.fc4e4c80.ttf"
   },
   "entrypoints": [
     "static/js/runtime-main.3684a5dc.js",
     "static/js/2.7cc3d5f8.chunk.js",
-    "static/css/main.d59afb93.chunk.css",
+    "static/css/main.40bbdbfd.chunk.css",
     "static/js/main.d867d951.chunk.js"
   ]
 }
