@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/MindmapNew/static/css/main.d59afb93.chunk.css",
-    "main.js": "/MindmapNew/static/js/main.698477c9.chunk.js",
-    "main.js.map": "/MindmapNew/static/js/main.698477c9.chunk.js.map",
+    "main.js": "/MindmapNew/static/js/main.5e1fd6b3.chunk.js",
+    "main.js.map": "/MindmapNew/static/js/main.5e1fd6b3.chunk.js.map",
     "runtime-main.js": "/MindmapNew/static/js/runtime-main.3684a5dc.js",
     "runtime-main.js.map": "/MindmapNew/static/js/runtime-main.3684a5dc.js.map",
     "static/js/2.7cc3d5f8.chunk.js": "/MindmapNew/static/js/2.7cc3d5f8.chunk.js",
     "static/js/2.7cc3d5f8.chunk.js.map": "/MindmapNew/static/js/2.7cc3d5f8.chunk.js.map",
     "index.html": "/MindmapNew/index.html",
-    "precache-manifest.ab1b38c7648c1ca85e0f9231a7f2f649.js": "/MindmapNew/precache-manifest.ab1b38c7648c1ca85e0f9231a7f2f649.js",
+    "precache-manifest.e0df4cb3221eb89b6ebf5c53c7adc3e2.js": "/MindmapNew/precache-manifest.e0df4cb3221eb89b6ebf5c53c7adc3e2.js",
     "service-worker.js": "/MindmapNew/service-worker.js",
     "static/css/main.d59afb93.chunk.css.map": "/MindmapNew/static/css/main.d59afb93.chunk.css.map",
     "static/js/2.7cc3d5f8.chunk.js.LICENSE.txt": "/MindmapNew/static/js/2.7cc3d5f8.chunk.js.LICENSE.txt",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.3684a5dc.js",
     "static/js/2.7cc3d5f8.chunk.js",
     "static/css/main.d59afb93.chunk.css",
-    "static/js/main.698477c9.chunk.js"
+    "static/js/main.5e1fd6b3.chunk.js"
   ]
 }
