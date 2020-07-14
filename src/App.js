@@ -252,7 +252,7 @@ class App extends Component {
         position: "absolute",
         top: "485px",
         left: "1545px",
-        can: "dl",
+        can: "l2",
       },
     };
     dict["row3col4"] = {
@@ -1227,6 +1227,14 @@ class App extends Component {
           x = x + 5;
           c.lineTo(startX + x, startY);
           if (startX + x === endX - 20) {
+            condition = false;
+          }
+        }
+        if (dict[e].style.can == "l2" && condition) {
+          c.moveTo(startX, startY);
+          x = x + 5;
+          c.lineTo(startX + x, startY);
+          if (startX + x === endX + 75) {
             condition = false;
           }
         }
