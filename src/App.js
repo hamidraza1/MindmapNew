@@ -671,9 +671,9 @@ class App extends Component {
       text: "Lorem Ipsum is simply dummy text of",
       color: "yellow",
       parentNode: "blue",
-      blueChilds: [],
-      yellowChilds: ["row7col5", "row7col6"],
-      clickable: this.state.Crow6col6,
+      blueChilds: ["row7col5", "row7col6"],
+      yellowChilds: [],
+      clickable: false,
       display: this.state.row6col6,
       btnbox: false,
       style: {
@@ -842,7 +842,7 @@ class App extends Component {
     dict["row7col5"] = {
       id: "row7col5",
       text: "Lorem Ipsum is simply dummy text of the",
-      color: "yellow",
+      color: "blue",
       parentNode: "yellow",
       blueChilds: [],
       yellowChilds: ["row8col4", "row8col5", "row8col6"],
@@ -866,7 +866,7 @@ class App extends Component {
     dict["row7col6"] = {
       id: "row7col6",
       text: "Lorem Ipsum is simply dummy text of the",
-      color: "yellow",
+      color: "blue",
       parentNode: "yellow",
       blueChilds: [],
       yellowChilds: ["row8col7"],
