@@ -656,7 +656,7 @@ class App extends Component {
       style: {
         width: "175px",
         height: "175px",
-        backgroundColor: "#00BBE6",
+        backgroundColor: "#15B2B1",
         color: "white",
         fontSize: "13px",
         border: "0",
